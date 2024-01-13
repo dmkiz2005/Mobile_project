@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         itemList = new ArrayList<>();
-        itemList.add(new Item("Product 1"));
-        itemList.add(new Item("Product 2"));
-        itemList.add(new Item("Product 3"));
+        for(int i = 0;i<50;i++){
+            itemList.add(new Item("Product "+i));
+        }
 
         adapter = new MyAdapter(itemList);
         recyclerView.setAdapter(adapter);
