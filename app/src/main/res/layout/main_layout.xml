@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:src="@drawable/settings"
+                android:src="@drawable/settings_shestir"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/imageButton7"
                 app:layout_constraintTop_toTopOf="parent" />

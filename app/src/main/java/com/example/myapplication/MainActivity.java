@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
 
         }
-        */
+
+         */
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
