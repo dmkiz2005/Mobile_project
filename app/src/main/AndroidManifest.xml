@@ -13,6 +13,30 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".functions.Price_list"
+            android:exported="false" />
+        <activity
+            android:name=".functions.Reports"
+            android:exported="false" />
+        <activity
+            android:name=".functions.Tasks"
+            android:exported="false" />
+        <activity
+            android:name=".functions.Payments"
+            android:exported="false" />
+        <activity
+            android:name=".functions.Debts"
+            android:exported="false" />
+        <activity
+            android:name=".functions.Orders"
+            android:exported="false" />
+        <activity
+            android:name=".functions.Client"
+            android:exported="false" />
+        <activity
+            android:name=".functions.Track"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

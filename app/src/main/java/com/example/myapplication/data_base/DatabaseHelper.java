@@ -6,8 +6,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "myDatabase.db";
+    private static final String DATABASE_NAME = "DataBase";
     private static final int DATABASE_VERSION = 1;
+    public static final String NAME_COLUME = "name";
+    public static final String AGE_COLUME = "age";
 
     public DatabaseHelper(Context context, String name,
                           CursorFactory factory, int version) {
@@ -16,11 +18,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // Создайте необходимые таблицы здесь
+        String createTableQuery = "CREATE TABLE IF NOT EXISTS mytable ("
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + NAME_COLUME + " TEXT, "
+                + AGE_COLUME + " INTEGER)";
+        db.execSQL(createTableQuery);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Обновите структуру таблиц здесь
+
     }
 }
