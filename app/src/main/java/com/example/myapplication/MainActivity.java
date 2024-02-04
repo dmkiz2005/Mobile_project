@@ -64,49 +64,49 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onClick_Track(View view){
+    public void onClick_Track(View view) {
         Intent intent = new Intent(this, Track.class);
         System.out.println("YES");
         startActivity(intent);
     }
 
-    public void onClick_Orders(View view){
+    public void onClick_Orders(View view) {
         Intent intent = new Intent(this, Orders.class);
         System.out.println("YES");
         startActivity(intent);
     }
 
-    public void onClick_Debts(View view){
+    public void onClick_Debts(View view) {
         Intent intent = new Intent(this, Debts.class);
         System.out.println("YES");
         startActivity(intent);
     }
 
-    public void onClick_Payments(View view){
+    public void onClick_Payments(View view) {
         Intent intent = new Intent(this, Payments.class);
         System.out.println("YES");
         startActivity(intent);
     }
 
-    public void onClick_Clients(View view){
+    public void onClick_Clients(View view) {
         Intent intent = new Intent(this, Client.class);
         System.out.println("YES");
         startActivity(intent);
     }
 
-    public void onClick_Price_list(View view){
+    public void onClick_Price_list(View view) {
         Intent intent = new Intent(this, Price_list.class);
         System.out.println("YES");
         startActivity(intent);
     }
 
-    public void onClick_Reports(View view){
+    public void onClick_Reports(View view) {
         Intent intent = new Intent(this, Reports.class);
         System.out.println("YES");
         startActivity(intent);
     }
 
-    public void onClick_Tasks(View view){
+    public void onClick_Tasks(View view) {
         Intent intent = new Intent(this, Tasks.class);
         System.out.println("YES");
         startActivity(intent);
