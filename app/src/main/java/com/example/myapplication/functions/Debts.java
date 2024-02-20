@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.example.myapplication.R;
@@ -17,17 +16,16 @@ import java.util.List;
 public class Debts extends AppCompatActivity {
 
 
-    private List<Item_debts> itemList;
+    private ArrayList<Item_debts> itemList;
     private RecyclerView recyclerView;
     private Adapter_Debts adapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_debts);
 
-        recyclerView = findViewById(R.id.recyclerView1);
+        recyclerView = findViewById(R.id.recyclerView2);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

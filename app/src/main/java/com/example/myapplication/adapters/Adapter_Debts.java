@@ -1,6 +1,7 @@
 package com.example.myapplication.adapters;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,12 +38,16 @@ public class Adapter_Debts extends RecyclerView.Adapter<Adapter_Debts.ViewHolder
         holder.checkBox.setChecked(currentDataModel.isCheckbox());
         holder.checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
             currentDataModel.setCheckbox(isChecked);
-            // Дополнительная логика при изменении состояния чекбокса
         });
 
         holder.textView1.setText(currentDataModel.getName_company());
         holder.textView2.setText(currentDataModel.getAdress_company());
         holder.textView3.setText(currentDataModel.getPrice_debts());
+        if (position % 2 != 0) {
+            holder.itemView.setBackgroundColor(Color.GRAY);
+        } else {
+            holder.itemView.setBackgroundColor(Color.WHITE);
+        }
     }
 
     @Override
