@@ -2,49 +2,49 @@ package com.example.myapplication.new_types;
 
 public class Product_orders {
 
-    private String id;
-    private String product_Name;
-    private String weight;
-    private String box;
-    private String barcode;
+    private String Product;
+    private String ProductName;
+    private String Weight;
+    private String Box;
+    private String BarCode;
 
-    public String getId() {
-        return id;
+    public String getProduct() {
+        return Product;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setProduct(String product) {
+        Product = product;
     }
 
-    public String getProduct_Name() {
-        return product_Name;
+    public String getProductName() {
+        return ProductName;
     }
 
-    public void setProduct_Name(String product_Name) {
-        this.product_Name = product_Name;
+    public void setProductName(String productName) {
+        ProductName = productName;
     }
 
     public String getWeight() {
-        return weight;
+        return Weight;
     }
 
     public void setWeight(String weight) {
-        this.weight = weight;
+        Weight = weight;
     }
 
     public String getBox() {
-        return box;
+        return Box;
     }
 
     public void setBox(String box) {
-        this.box = box;
+        Box = box;
     }
 
-    public String getBarcode() {
-        return barcode;
+    public String getBarCode() {
+        return BarCode;
     }
 
-    public void setBarcode(String barcode) {
-        this.barcode = barcode;
+    public void setBarCode(String barCode) {
+        BarCode = barCode;
     }
 }

@@ -46,5 +46,6 @@ dependencies {
     implementation("org.codehaus.jackson:jackson-mapper-asl:1.9.13")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.12.5")
     implementation("org.apache.httpcomponents:httpclient:4.5.14")
+    implementation("com.google.code.gson:gson:2.10.1")
 
 }
