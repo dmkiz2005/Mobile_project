@@ -22,6 +22,7 @@ import com.example.myapplication.functions.Track;
 import com.example.myapplication.new_types.Item;
 import com.example.myapplication.requests.OneC_Request;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick_Track(View view) {
         Intent intent = new Intent(this, Track.class);
-        System.out.println("YES");
         startActivity(intent);
     }
 
