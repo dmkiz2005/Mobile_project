@@ -1,6 +1,7 @@
 package com.example.myapplication.json;
 
 import com.example.myapplication.new_types.Item;
+import com.example.myapplication.new_types.Product_orders;
 
 import org.codehaus.jackson.map.ObjectMapper;
 
@@ -12,12 +13,12 @@ import java.util.Objects;
 
 public class JsonReader {
 
-    public List<Item> getObject(String json)
+    public List<Product_orders> getObject(String json)
     {
         ObjectMapper mapper = new ObjectMapper();
-        List<Item> methodList = new ArrayList<>();
+        List<Product_orders> methodList = new ArrayList<>();
         try {
-            methodList = Arrays.asList(mapper.readValue(json, Item[].class));
+            methodList = Arrays.asList(mapper.readValue(json, Product_orders[].class));
         }
         catch (IOException e){
             System.out.println(e);
