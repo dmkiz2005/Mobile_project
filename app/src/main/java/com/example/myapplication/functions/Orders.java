@@ -1,22 +1,31 @@
 package com.example.myapplication.functions;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
 import com.example.myapplication.R;
+import com.example.myapplication.adapters.Adapter_Debts;
+import com.example.myapplication.adapters.Adapter_Order;
 import com.example.myapplication.json.JsonReader;
+import com.example.myapplication.new_types.Item_debts;
 import com.example.myapplication.new_types.Product_orders;
 import com.example.myapplication.requests.OneC_Request;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Orders extends AppCompatActivity {
 
     private List<Product_orders> arrayList;
+    private ArrayList<Product_orders> itemList;
+    private RecyclerView recyclerView;
+    private Adapter_Order adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +53,12 @@ public class Orders extends AppCompatActivity {
 
     private void handleData(List<Product_orders> arrayList) {
 
+        recyclerView = findViewById(R.id.recyclerView2);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        adapter = new Adapter_Order(this, (ArrayList<Product_orders>) arrayList);
+        recyclerView.setAdapter(adapter);
     }
 
 }

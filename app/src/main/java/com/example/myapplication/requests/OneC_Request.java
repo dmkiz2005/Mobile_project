@@ -28,7 +28,7 @@ public class OneC_Request {
             @Override
             protected String doInBackground(Void... voids) {
                 try {
-                    URL url = new URL("http://185.59.100.221/winterApp/hs/tradeagent/get_products?name=1");
+                    URL url = new URL("http://185.59.100.221/winterApp/hs/tradeagent/get_products?name=2");
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("GET");
                     connection.setRequestProperty("Authorization", "Basic " + encodeCredentialsToBase64("testApp", "vd8D2K2i9M"));
