@@ -59,5 +59,6 @@ public class TabFragment_Debts extends Fragment {
 
         adapter = new Adapter_Order(requireActivity(), (ArrayList<Product_orders>) arrayList);
         recyclerView.setAdapter(adapter);
+        //OneC_Request.sendPostRequest(arrayList);
     }
 }

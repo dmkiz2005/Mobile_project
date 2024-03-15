@@ -2,6 +2,7 @@ package com.example.myapplication.requests;
 
 import android.os.AsyncTask;
 
+import com.example.myapplication.json.JsonReader;
 import com.example.myapplication.new_types.Product_orders;
 import com.google.gson.Gson;
 
@@ -63,7 +64,8 @@ public class OneC_Request {
             @Override
             protected String doInBackground(Void... voids) {
                 try {
-                    URL url = new URL("http://185.59.100.221:32765/winterApp/hs/tradeagent/products");
+                    //URL url = new URL("http://185.59.100.221:32765/winterApp/hs/tradeagent/products");
+                    URL url = new URL("https://postman-echo.com/post");
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("POST");
                     connection.setRequestProperty("Content-Type", "application/json");
@@ -72,7 +74,7 @@ public class OneC_Request {
 
                     // Сериализация списка объектов в JSON
                     Gson gson = new Gson();
-                    String jsonInputString = gson.toJson(products);
+                    String jsonInputString = JsonReader.convertProductAndProductNameToJson(products);
 
                     // Отправка данных
                     try (OutputStream os = connection.getOutputStream()) {

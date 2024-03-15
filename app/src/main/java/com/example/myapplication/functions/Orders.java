@@ -26,6 +26,8 @@ import java.util.List;
 
 public class Orders extends AppCompatActivity {
 
+    private String[] name_head = {"Шапка","Товары","Долги","Возрват","Строчек","Оборуд","Задачи","Доп.Инфо"};
+
     private List<Product_orders> arrayList;
     private ArrayList<Product_orders> itemList;
     private RecyclerView recyclerView;
@@ -44,7 +46,7 @@ public class Orders extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         new TabLayoutMediator(tabLayout, viewPager,
-                (tab, position) -> tab.setText("Tab " + (position + 1))
+                (tab, position) -> tab.setText(name_head[position])
         ).attach();
         System.out.println("YES");
         //JsonReader jsonReader = new JsonReader();
