@@ -47,5 +47,6 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:2.12.5")
     implementation("org.apache.httpcomponents:httpclient:4.5.14")
     implementation("com.google.code.gson:gson:2.10.1")
-
+    implementation ("com.google.android.material:material:1.4.0")
+    implementation ("androidx.viewpager2:viewpager2:1.1.0-alpha01")
 }
