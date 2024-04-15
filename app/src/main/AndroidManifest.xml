@@ -21,6 +21,12 @@
             android:name=".functions.Price_list"
             android:exported="false" />
         <activity
+            android:name=".functions.AddInfomationAboutPosition_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".functions.AddInfomationAboutName_Activity"
+            android:exported="false" />
+        <activity
             android:name=".functions.Reports"
             android:exported="false" />
         <activity
